@@ -1,0 +1,22 @@
+Darkness - Discontinued, version 4.0.0
+
+Purpose:
+This is the final update for the existing Darkness Chrome Web Store item.
+Darkness was built on Manifest V2 and is now discontinued because browser
+support for Manifest V2 extensions has ended.
+
+User experience:
+When the toolbar icon or options page is opened, the extension displays a local
+page explaining that Darkness is discontinued and provides removal instructions.
+The page includes optional user-clicked links to official Google/Chrome
+information about Manifest V2.
+
+Implementation:
+The Manifest V3 package contains the local notice page, its stylesheet, a small
+button handler, and the Darkness icon files. The manifest declares no
+permissions, no host permissions, no background service worker, and no content
+script entries. The button handler only opens the browser extensions page after
+the user clicks the removal button.
+
+The purpose of this update is to notify existing users that Darkness has been
+discontinued and help them remove the extension.
